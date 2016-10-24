@@ -83,6 +83,7 @@ class YelpClient: BDBOAuth1RequestOperationManager {
                         failure: { (operation: AFHTTPRequestOperation?, error: Error) -> Void in
                             completion(nil, error)
                             print("eas not able to search \(error)")
+                            
                         })!
     }
 }

@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 
 - [] Search results page
    - [ ] Infinite scroll for restaurant results.
-   - [ ] Implement map view of restaurant results.
+   - [x] Implement map view of restaurant results.
 - [ ] Filter page
    - [ ] Implement a custom switch instead of the default UISwitch.
    - [x] Distance filter should expand as in the real Yelp app
@@ -43,6 +43,8 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <img src="https://github.com/jagdeeparora86/Yelp/raw/master/yelpss.gif" title="Video Walkthrough" width="" alt="Video Walkthrough" style="max-width:100%;">
+
+<img src="https://github.com/jagdeeparora86/Yelp/raw/master/map.gif" title="Video Walkthrough" width="" alt="Video Walkthrough" style="max-width:100%;">
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

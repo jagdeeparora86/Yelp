@@ -10,6 +10,7 @@ import UIKit
 
 class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, FilterViewControllerDelegate {
     
+    @IBOutlet weak var mapBttn: UIButton!
     var businesses: [Business]!
     var searchBar: UISearchBar!
     var currentFilterViewController : FilterViewController!
@@ -22,12 +23,14 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
+        
         searchBar = UISearchBar()
         searchBar.delegate = self
         searchBar.placeholder = "Restaurants"
         searchBar.sizeToFit()
         navigationItem.titleView = searchBar
         handleSearch(yelpSearch: YelpSearch.sharedInstance)
+        
     }
     
     func handleSearch(yelpSearch: YelpSearch){
@@ -62,6 +65,12 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let navigationViewController = segue.destination as! UINavigationController
+        if(navigationViewController.topViewController is MapViewController){
+            let mapViewController = navigationViewController.topViewController as! MapViewController
+            mapViewController.businesses = self.businesses
+        
+        }
+        else{
         let filterViewController = navigationViewController.topViewController as! FilterViewController
         filterViewController.delegate = self
         if(currentFilterViewController != nil){
@@ -71,6 +80,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
             filterViewController.selectedDistanceRow = currentFilterViewController.selectedDistanceRow
             filterViewController.selectedSort = currentFilterViewController.selectedSort
             filterViewController.selectedSortRow = currentFilterViewController.selectedSortRow
+        }
         }
         
     }
