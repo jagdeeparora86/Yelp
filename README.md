@@ -1,8 +1,8 @@
-# Project 2 - *Name of App Here*
+# Project 2 - *Yelp Search*
 
-**Name of your app** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
+**Yelp Search** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-Time spent: **X** hours spent in total
+Time spent: **21** hours spent in total
 
 ## User Stories
 
