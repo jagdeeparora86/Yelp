@@ -32,8 +32,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 	Added custom header view for section. 
-	Created filter model class to store all data in thee.
-	Implemented yelpSearch which had shared intense which can be used across the app to keep filters persistent.
+	Created filter model class to store all data in there.
+	Implemented yelpSearch which had shared instanse which can be used across the app to keep filters persistent.
 
 - [ ] List anything else that you can get done to improve the app functionality!
 	
