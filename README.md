@@ -43,7 +43,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 <table>
 <tr>
-</td>
+<td>
 <img src="https://github.com/jagdeeparora86/Yelp/raw/master/yelpss.gif" title="Video Walkthrough" width="" alt="Video Walkthrough" style="max-width:100%;">
 </td>
 <td>
